@@ -2,14 +2,13 @@ package com.datamhsw;  //Deklarasi package
 
 import java.util.Scanner; //Import library Scanner
 
-public class Main {  //Deklarasi class
+public class Biodata {  //Deklarasi class
 
     public static void main(String[] args) { //Deklarasi method main
         
         //Deklarasi variabeln
-        String nama, jurusan, gender;
-        int umur;
-        double ipk;
+        String nama, jurusan, tempat_lahir, alamat, email;
+        int nim, umur, nomer_hp, tanggal_lahir, bulan_lahir, tahun_lahir;
 
         //Membuat scanner
         Scanner input = new Scanner(System.in);
@@ -31,15 +30,39 @@ public class Main {  //Deklarasi class
         //tampilan output lanjutan
         System.out.print("Masukkan jurusan Anda: ");
         jurusan = input.nextLine();
-
-        System.out.print("Masukkan gender Anda: ");
-        gender = input.nextLine();
-
+        
+        System.out.print("Masukkan NIM Anda: ");
+        nim = input.nextInt();
+        
+        System.out.print("Masukkan alamat Anda: ");
+        alamat = input.nextLine();
+        
         System.out.print("Masukkan umur Anda: ");
         umur = input.nextInt();
+
+        System.out.print("Masukkan tempat lahir Anda: ");
+        tempat_lahir = input.nextLine();
+
+        System.out.print("Masukkan tanggal lahir Anda: ");
+        tanggal_lahir = input.nextInt();
+        input.nextLine(); // Consume the newline character
+
+        System.out.print("Masukkan bulan lahir Anda: ");
+        bulan_lahir = input.nextInt();
+        input.nextLine(); // Consume the newline character
+
+        System.out.print("Masukkan tahun lahir Anda: ");
+        tahun_lahir = input.nextInt();
+        input.nextLine(); // Consume the newline character
+
+        System.out.print("Masukkan nomor HP Anda: ");
+        nomer_hp = input.nextInt();
+        input.nextLine(); // Consume the newline character
+
+        System.out.print("Masukkan email Anda: ");
+        email = input.nextLine();
+
         
-        System.out.print("Masukkan IPK Anda: ");
-        ipk = input.nextDouble();
         
         //nutup scanner agar tidak terjadi memory leak
         input.close();
@@ -55,9 +78,12 @@ public class Main {  //Deklarasi class
         System.out.println("----------Data Anda----------");
         System.out.println("Nama Anda: " + nama);
         System.out.println("Jurusan Anda: " + jurusan);
-        System.out.println("Umur Anda: " + umur + " tahun");
-        System.out.println("IPK Anda: " + ipk);
-        System.out.println("Gender Anda: " + gender);
+        System.out.println("NIM Anda: " + nim);
+        System.out.println("Alamat Anda: " + alamat);
+        System.out.println("Umur Anda: " + umur);
+        System.out.println("Tempat, tanggal lahir Anda: " + tempat_lahir + ", " + tanggal_lahir + "/" + bulan_lahir + "/" + tahun_lahir);
+        System.out.println("Nomor HP Anda: " + nomer_hp);
+        System.out.println("Email Anda: " + email);
 
     }
 
