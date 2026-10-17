@@ -1,4 +1,4 @@
-package com.datamhsw;
+package com.TUGAS;
 
 import java.util.Scanner;
 

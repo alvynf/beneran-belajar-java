@@ -1,4 +1,4 @@
-package com.datamhsw;  //Deklarasi package
+package com.TUGAS;  //Deklarasi package
 
 import java.util.Scanner; //Import library Scanner
 
