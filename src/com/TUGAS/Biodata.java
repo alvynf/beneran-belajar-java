@@ -7,8 +7,8 @@ public class Biodata {  //Deklarasi class
     public static void main(String[] args) { //Deklarasi method main
         
         //Deklarasi variabeln
-        String nama, jurusan, tempat_lahir, alamat, email;
-        int nim, umur, nomer_hp, tanggal_lahir, bulan_lahir, tahun_lahir;
+        String nama, jurusan, tempat_lahir, bulan_lahir, alamat, email;
+        int nim, umur, nomer_hp, tanggal_lahir, tahun_lahir;
 
         //Membuat scanner
         Scanner input = new Scanner(System.in);
@@ -33,36 +33,33 @@ public class Biodata {  //Deklarasi class
         
         System.out.print("Masukkan NIM Anda: ");
         nim = input.nextInt();
+        input.nextLine();
         
         System.out.print("Masukkan alamat Anda: ");
         alamat = input.nextLine();
         
+        System.out.print("Masukkan tempat lahir Anda: ");
+        tempat_lahir = input.nextLine();
+        
+        System.out.print("Masukkan tanggal lahir Anda: ");
+        tanggal_lahir = input.nextInt();
+        input.nextLine(); //untuk menghapus enter yang tersisa dari input sebelumnya
+        
+        System.out.print("Masukkan bulan lahir Anda(huruf): ");
+        bulan_lahir = input.nextLine();
+        
+        System.out.print("Masukkan tahun lahir Anda: ");
+        tahun_lahir = input.nextInt();
+
         System.out.print("Masukkan umur Anda: ");
         umur = input.nextInt();
 
-        System.out.print("Masukkan tempat lahir Anda: ");
-        tempat_lahir = input.nextLine();
-
-        System.out.print("Masukkan tanggal lahir Anda: ");
-        tanggal_lahir = input.nextInt();
-        input.nextLine(); // Consume the newline character
-
-        System.out.print("Masukkan bulan lahir Anda: ");
-        bulan_lahir = input.nextInt();
-        input.nextLine(); // Consume the newline character
-
-        System.out.print("Masukkan tahun lahir Anda: ");
-        tahun_lahir = input.nextInt();
-        input.nextLine(); // Consume the newline character
-
         System.out.print("Masukkan nomor HP Anda: ");
         nomer_hp = input.nextInt();
-        input.nextLine(); // Consume the newline character
+        input.nextLine();
 
         System.out.print("Masukkan email Anda: ");
         email = input.nextLine();
-
-        
         
         //nutup scanner agar tidak terjadi memory leak
         input.close();
@@ -84,7 +81,7 @@ public class Biodata {  //Deklarasi class
         System.out.println("Tempat, tanggal lahir Anda: " + tempat_lahir + ", " + tanggal_lahir + "/" + bulan_lahir + "/" + tahun_lahir);
         System.out.println("Nomor HP Anda: " + nomer_hp);
         System.out.println("Email Anda: " + email);
-
+        
     }
 
 }
