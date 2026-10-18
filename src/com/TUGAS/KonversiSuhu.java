@@ -19,9 +19,9 @@ public class KonversiSuhu {
         fahrenheit = (1.8 * celcius) + 32;  // Atau ((9.0 / 5.0) * celcius) + 32
 
         System.out.println("---------------------------------");
-        System.out.println("Suhu Celcius            = " + celcius + " ^C");
-        System.out.println("Hasil ke Reamur        = " + reamur + " ^R");
-        System.out.println("Hasil ke Fahrenheit     = " + fahrenheit + " ^F");
+        System.out.println("Suhu Celcius            = " + (long) celcius + " ^C");
+        System.out.println("Hasil ke Reamur        = " + (long) reamur + " ^R");
+        System.out.println("Hasil ke Fahrenheit     = " + (long) fahrenheit + " ^F");
 
         input.close();
     }
