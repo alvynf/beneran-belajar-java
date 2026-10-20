@@ -2,7 +2,7 @@ package com.NYOBA;
 
 import java.util.Scanner;
 
-public class hihi {
+public class Programtamkal {
 
     public static void main(String[] args) {
 
@@ -12,6 +12,7 @@ public class hihi {
         int pilihan;
         int angka1, angka2, hasil;
 
+        System.out.println("program jumlah dan kali sederhana!");
         System.out.print(":::.Menu pilihan.:::");
         System.out.println("1. Penjumlahan");
         System.out.println("2. Perkalian");
