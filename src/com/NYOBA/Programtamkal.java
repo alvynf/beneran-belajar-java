@@ -13,10 +13,10 @@ public class Programtamkal {
         int angka1, angka2, hasil;
 
         System.out.println("program jumlah dan kali sederhana!");
-        System.out.print(":::.Menu pilihan.:::");
+        System.out.println(":::.Menu pilihan.:::");
         System.out.println("1. Penjumlahan");
         System.out.println("2. Perkalian");
-        System.out.print("Masukan pilihan (1/2) : ");
+        System.out.print("Masukan pilihan (1 atau 2) : ");
         pilihan = scanner.nextInt();
 
         if (pilihan == 1) {
@@ -34,7 +34,7 @@ public class Programtamkal {
             hasil = angka1 * angka2;
             System.out.println("Hasil perkalian: " + hasil);
         } else {
-            System.out.println("Pilihan tidak valid.");
+            System.out.println("Salah masukan pilihan.");
         }
     } 
 }
