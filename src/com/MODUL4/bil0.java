@@ -1,4 +1,4 @@
-package com.IFELSEIF;
+package com.MODUL4;
 
 import java.util.Scanner;
 
