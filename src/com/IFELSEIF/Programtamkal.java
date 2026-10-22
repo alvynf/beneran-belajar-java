@@ -1,4 +1,4 @@
-package com.NYOBA;
+package com.IFELSEIF;
 
 import java.util.Scanner;
 
