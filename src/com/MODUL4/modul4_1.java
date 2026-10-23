@@ -2,7 +2,7 @@ package com.MODUL4;
 
 import java.util.Scanner;
 
-public class jilnap {
+public class modul4_1 {
 
     public static void main(String[] args) {
       
