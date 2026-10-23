@@ -2,7 +2,7 @@ package com.MODUL4;
 
 import java.util.Scanner;
 
-public class bil0 {
+public class modul4 {
     public static void main(String[] args) {
         
         Scanner masuk = new Scanner(System.in);

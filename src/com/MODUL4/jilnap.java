@@ -10,7 +10,6 @@ public class jilnap {
         
         Scanner masuks = new Scanner(System.in);
 
-
         System.out.println(":::.GANJIl/GENAP.:::");
         System.out.print("Masukkan sebuah bilangan: ");
         bil = masuks.nextInt();
